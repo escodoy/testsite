@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Edsel Codoy"> 
+        <style>
+            body {
+                margin: 2px 0;
+            }
+
+            #heading {
+                display: flex;
+                margin: 0;
+                padding: 8px 0 0 8px;
+            }
+
+            img {
+                width: 74px;
+                height: 24px;
+                padding: 12px;
+                margin: 0 900px 0 0;
+            }
+
+            nav {
+                display: inline-flex;
+                padding: 15px;
+            }
+
+            a {
+                font: 13px arial, sans-serif;
+                color: #000000de;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            h1 {
+                font: 20px arial, sans-serif;
+                color: #d93025;
+                margin: 18px 45px 25px;
+            }
+
+            hr {
+                border: none;
+                border-bottom: 1px solid #ebebeb;
+            }
+
+            h2 {
+                font: 16px arial, sans-serif;
+                color: #333333;
+                margin: 45px 45px 0 45px;
+            }
+
+            label {
+                font: 13px arial, sans-serif;
+                color: #222222;
+            }
+
+            tr > td:first-of-type {
+                width: 183px;
+            }
+
+            tr input {
+                width: 474px;
+                height: 23px;
+                padding: 1px 8px;
+                border: 1px solid #c0c0c0;
+            }
+            
+            tr input:focus {
+                outline-color: #4d90ef;
+            }
+            table{
+                margin: 5px 35px;
+            }
+
+            td {
+                padding: 8px;
+            }
+
+            input[type="submit"] {
+                visibility: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="heading">
+            <img src="google.png" alt="Google">
+            <nav>
+                <a href="index.html">Google Search</a>
+            </nav>
+        </div>
+        <h1>Advanced Search</h1>
+        <hr>
+        <h2>Find pages with...</h2>
+        <form action="https://google.com/search">
+            <table>
+                <tr id="field1">
+                    <td><label for="#field1">all these words:</label></td>
+                    <td><input type="text" name="as_q" autocomplete="off"></td>
+                </tr>
+                <tr id="field2">
+                    <td><label for="#field2">this exact word or phrase:</label></td>
+                    <td><input type="text" name="as_epq" autocomplete="off"></td>
+                </tr>
+                <tr id="field3">
+                    <td><label for="#field3">any of these words:</label></td>
+                    <td><input type="text" name="as_oq" autocomplete="off"></td>
+                </tr>
+                <tr id="field4">
+                    <td><label for="#field4">none of these words:</label></td>
+                    <td><input type="text" name="as_eq" autocomplete="off"></td>
+                </tr>
+            </table>
+            <input type="submit">
+        </form>
+
+    </body>
+
+</html>

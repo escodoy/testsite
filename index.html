@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Edsel Codoy">
+        <meta name="description" content="Recreating Google Search">
+        <style>
+            html {
+                display: flex; 
+                justify-content: center;
+            }
+
+            body {
+                position: relative;
+                top: 133.5px;
+                width: 620px;
+            }
+            
+            #logo {
+                position: absolute;
+                left: 174px;
+                top: 0px;
+            }
+
+            input:first-of-type {
+                position: absolute;
+                top: 120px;
+                left: 20px;
+                border-radius: 30px;
+                margin-bottom: 12px;
+                border: 1px solid #dfe1e5;
+                font: 16px arial, sans-serif;
+                color: #212121;
+                width: 544px;
+                height: 44px;
+                margin: 0;
+                padding: 0 20px;
+            }
+
+            input[type="submit"] {
+                position: absolute;
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                top: 193px;
+                font: 14px arial, sans-serif;
+                color: #202124;
+                height: 36px;
+            }
+
+            input:nth-of-type(2) {
+                left: 169px;
+                width: 127px;
+            }
+
+            input:nth-of-type(3) {
+                left: 309px;
+                width: 142px;
+            }
+
+            input:focus {
+                outline: 0;
+            }
+
+            input[type="text"]:hover {
+                border: 1px solid #dfe1e5;
+                box-shadow: 1px 1px 5px #dfe1e5;
+            }
+
+            input[type="submit"]:hover {
+                border: 1px solid rgb(182, 185, 189);
+                box-shadow: 1px 1px 5px #dfe1e5;
+            }
+
+            nav {
+                position: relative;
+                left: 750px;
+                top: -120px;
+            }
+
+            a {
+                padding: 8px;
+                font: 13px arial, sans-serif;
+                color: #000000de;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+           
+        </style>
+    </head>
+    <body> 
+        <nav>
+            <a href="image_search.html">Images</a>
+            <a href="advanced_search.html">Advanced</a>
+        </nav>
+        <div id="logo">
+            <img src="google.png" alt="Google"> 
+        </div>
+        <div>
+            <form action="https://google.com/search">
+                <input type="text" name="q" placeholder="Search" autocomplete="off" autofocus>
+                <input type="submit" value="Google Search" name="btnK">
+                <input type="submit" value="I'm Feeling Lucky" name="btnI">
+            </form>
+        </div>
+    </body>
+</html>

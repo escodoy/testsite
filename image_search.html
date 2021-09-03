@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Images</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Edsel Codoy">
+        <style>
+            html {
+                display: flex; 
+                justify-content: center;
+            }
+
+            body {
+                position: relative;
+                top: 133.5px;
+                width: 620px;
+            }
+            #logo {
+                position: absolute;
+                left: 172px;
+                top: -10px;
+                background-color: #ffffff;
+            }
+
+            input:first-of-type {
+                position: absolute;
+                top: 120px;
+                left: 20px;
+                border-radius: 30px;
+                margin-bottom: 12px;
+                border: 1px solid #dfe1e5;
+                font: 16px arial, sans-serif;
+                color: #212121;
+                width: 430px;
+                height: 44px;
+                margin: 0;
+                padding: 0 20px;
+            }
+
+            input:nth-of-type(2) {
+                position: absolute;
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                border-radius: 8px;
+                top: 125px;
+                font: 14px arial, sans-serif;
+                color: #202124;
+                height: 36px;
+                left: 500px;
+                width: 127px;
+            }
+
+            input:focus {
+                outline: 0;
+            }
+
+            input[type="text"]:hover {
+                border: 1px solid #dfe1e5;
+                box-shadow: 1px 1px 5px #dfe1e5;
+            }
+
+            input[type="submit"]:hover {
+                border: 1px solid rgb(182, 185, 189);
+                box-shadow: 1px 1px 5px #dfe1e5;
+            }
+
+            img {
+                width: 280px;
+                height: 109px;
+            }
+
+            nav {
+                position: relative;
+                left: 750px;
+                top: -120px;
+            }
+
+            a {
+                padding: 8px;
+                font: 13px arial, sans-serif;
+                color: #000000de;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <body> 
+            <nav>
+                <a href="index.html">Google Search</a>
+            </nav>
+            <div id="logo">
+                <img src="google-image.png" alt="Google Images"> 
+            </div>
+            <div>
+                <form action="https://www.google.com.ph/images">
+                    <input type="text" name="q" placeholder="Search" autocomplete="off" autofocus>
+                    <input type="submit" value="Search Images">
+                </form>
+            </div>
+        </body>
+    </body>
+</html>
